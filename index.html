@@ -86,7 +86,8 @@ h2{font-size:40px;font-style:italic;font-weight:600;line-height:1.15;letter-spac
 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
 .case{border:1px solid var(--line);background:var(--panel);padding:28px 26px}
 .case .tag{font-size:10.5px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
-.case h3{font-family:'Source Serif 4',serif;font-style:italic;font-size:26px;margin:10px 0 12px}
+.case .clogo{width:38px;height:38px;object-fit:contain;border:1px solid var(--line);background:#fff;padding:5px;margin:12px 0 2px;display:block}
+.case h3{font-family:'Source Serif 4',serif;font-style:italic;font-size:26px;margin:8px 0 12px}
 .case p{font-size:13.5px;color:var(--muted)}
 .case a{font-size:12px}
 
@@ -189,6 +190,33 @@ footer a{color:var(--muted)}
   </div>
 </header>
 
+<section id="enroll-top" style="padding:56px 0;background:var(--panel)">
+  <div class="wrap">
+    <div class="eyebrow">Two ways to enroll</div>
+    <h2 class="serif" style="margin-bottom:8px">Pick your path in.</h2>
+    <p class="lead" style="margin-bottom:34px">The workshop on its own, or the workshop paired with the fully-recorded Claude Certified Architect track. Choose before you check out.</p>
+    <div class="cases" style="grid-template-columns:1fr 1fr;gap:22px;margin-top:0">
+      <div class="case" style="background:var(--paper);display:flex;flex-direction:column">
+        <div class="tag">Option A · the workshop</div>
+        <h3 style="margin-bottom:6px">Harness Engineering</h3>
+        <p style="margin-bottom:14px">The full 5-day live cohort, Aug 3–7. Recordings, code checkpoints, and live review of your harness.</p>
+        <p style="font-family:'Source Serif 4',serif;font-style:italic;font-size:30px;color:var(--ink);margin:auto 0 2px">₹60,000</p>
+        <p style="font-size:12px;margin-bottom:16px">early-bird launch price · expected to go up</p>
+        <a class="btn solid" href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">Enroll — ₹60,000</a>
+      </div>
+      <div class="case" style="outline:2px solid var(--accent);outline-offset:-2px;background:#f9f4ee;display:flex;flex-direction:column">
+        <div class="tag" style="color:var(--accent)">Option B · best value</div>
+        <h3 style="margin-bottom:6px">Workshop + Claude Certified Architect</h3>
+        <p style="margin-bottom:14px">Add the <a href="https://ccaf.vizuara.ai" target="_blank" rel="noopener">Claude Certified Architect</a> track — a <b>fully recorded</b> course plus mock exams (₹45,000 on its own).</p>
+        <p style="font-family:'Source Serif 4',serif;font-style:italic;font-size:30px;color:var(--ink);margin:auto 0 2px">₹85,000 <span style="font-size:16px;color:var(--muted);text-decoration:line-through">₹1,05,000</span></p>
+        <p style="font-size:12px;margin-bottom:16px">save ₹20,000 · certification path included</p>
+        <a class="btn solid" href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">Enroll in the bundle — ₹85,000</a>
+      </div>
+    </div>
+    <p style="font-size:12.5px;color:var(--muted);margin-top:22px;text-align:center">Full breakdown below · questions? email <a href="mailto:team@vizuara.com">team@vizuara.com</a></p>
+  </div>
+</section>
+
 <section id="thesis">
   <div class="wrap">
     <div class="eyebrow">The thesis</div>
@@ -219,16 +247,19 @@ footer a{color:var(--muted)}
     <div class="cases">
       <div class="case">
         <div class="tag">Anthropic</div>
+        <img class="clogo" src="assets/logo-claudecode.png" alt="Claude Code / Anthropic logo" width="38" height="38">
         <h3>Claude Code</h3>
         <p>The reference production harness: permission modes, hooks, skills, MCP, sub-agent types, compaction. We use it as the anatomy chart for every subsystem we build.</p>
       </div>
       <div class="case">
         <div class="tag">pi.dev</div>
+        <img class="clogo" src="assets/logo-pi.png" alt="pi logo" width="38" height="38">
         <h3>pi</h3>
         <p>A minimal agentic harness — small surface, extensions, any model. The proof that a harness doesn't need to be enormous to be real. Your capstone is built in its spirit. <a href="https://pi.dev" target="_blank" rel="noopener">pi.dev ↗</a></p>
       </div>
       <div class="case">
         <div class="tag">Nous Research</div>
+        <img class="clogo" src="assets/logo-hermes.png" alt="Hermes / Nous Research logo" width="38" height="38">
         <h3>Hermes</h3>
         <p>An open agentic harness from a research lab — a different set of design choices for the same problems. We use it for projects and contrast throughout. <a href="https://hermes-agent.nousresearch.com" target="_blank" rel="noopener">hermes ↗</a></p>
       </div>
@@ -381,7 +412,7 @@ footer a{color:var(--muted)}
       <div class="case" style="outline:2px solid var(--accent);outline-offset:-2px;background:#f9f4ee">
         <div class="tag" style="color:var(--accent)">Add-on · best value</div>
         <h3>+ Claude Certified Architect</h3>
-        <p style="margin-bottom:14px">Add Vizuara's <a href="https://vizuara.ai/courses/claude-certified-architect-workshop" target="_blank" rel="noopener">Claude Certified Architect</a> track — the complete recorded video course plus mock exams that prepare you for the Claude Certified Architect certification (₹45,000 on its own).</p>
+        <p style="margin-bottom:14px">Add Vizuara's <a href="https://ccaf.vizuara.ai" target="_blank" rel="noopener">Claude Certified Architect</a> track — a <b>fully recorded</b> video course plus timed mock exams that prepare you for the Claude Certified Architect certification (₹45,000 on its own). Watch at your own pace, anytime.</p>
         <p style="font-family:'Source Serif 4',serif;font-style:italic;font-size:30px;color:var(--ink);margin-bottom:4px">₹85,000 <span style="font-size:16px;color:var(--muted);text-decoration:line-through">₹1,05,000</span></p>
         <p style="font-size:12px;margin-bottom:18px">workshop + certification track together · save ₹20,000</p>
         <a class="btn solid" href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">Enroll in the bundle — ₹85,000</a>
@@ -425,7 +456,7 @@ footer a{color:var(--muted)}
       </details>
       <details>
         <summary>How do I enroll?</summary>
-        <div class="a">Through the Vizuara course page — <a href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">enroll here</a>. Seats are limited; the cohort is kept small enough for live review of every participant's harness.</div>
+        <div class="a">Through the Vizuara course page — <a href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">enroll here</a>. Seats are limited; the cohort is kept small enough for live review of every participant's harness. Any questions before you enroll? Email <a href="mailto:team@vizuara.com">team@vizuara.com</a>.</div>
       </details>
     </div>
   </div>
@@ -443,7 +474,7 @@ footer a{color:var(--muted)}
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;width:100%">
     <span>© 2026 Vizuara AI Labs · harnessengineering.vizuara.ai</span>
-    <span><a href="https://vizuara.ai" target="_blank" rel="noopener">vizuara.ai</a> · <a href="https://www.youtube.com/@vizuara" target="_blank" rel="noopener">YouTube</a> · <a href="mailto:teamvizuara@gmail.com">contact</a></span>
+    <span><a href="https://vizuara.ai" target="_blank" rel="noopener">vizuara.ai</a> · <a href="https://ccaf.vizuara.ai" target="_blank" rel="noopener">CCAF track</a> · <a href="https://www.youtube.com/@vizuara" target="_blank" rel="noopener">YouTube</a> · <a href="mailto:team@vizuara.com">team@vizuara.com</a></span>
   </div>
 </footer>
 
