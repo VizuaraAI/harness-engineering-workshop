@@ -55,10 +55,11 @@ h1 .u{border-bottom:4px solid var(--accent)}
 .sub{font-size:15.5px;color:var(--muted);max-width:46ch;margin-bottom:34px}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .price-note{font-size:12px;color:var(--muted);margin-top:18px;letter-spacing:.05em}
-.ebird-banner{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;justify-content:center;text-align:center;
-  border:1.5px solid var(--accent);background:#f9f4ee;padding:14px 22px;margin:0 0 32px;font-size:13.5px}
-.ebird-banner .eb-clock{font-weight:600;color:var(--accent);letter-spacing:.06em;font-variant-numeric:tabular-nums}
-.ebird-banner .eb-note{color:var(--muted);font-size:12px;width:100%}
+.ebird-bar{background:var(--accent);color:#fff}
+.ebird-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px 16px;text-align:center;padding:9px 28px;font-size:13px}
+.ebird-bar b{font-weight:600}
+.ebird-bar .eb-clock{font-weight:700;letter-spacing:.05em;font-variant-numeric:tabular-nums}
+.ebird-bar .eb-note{opacity:.85;font-size:12px}
 
 /* terminal */
 .term{background:var(--term-bg);border:1px solid var(--line);box-shadow:0 1px 0 var(--line), 0 24px 60px -30px rgba(29,28,26,.35);font-size:13px}
@@ -142,6 +143,14 @@ footer a{color:var(--muted)}
 </head>
 <body>
 
+<div class="ebird-bar">
+  <div class="wrap ebird-inner">
+    <span>⏳ Early-bird <b>₹60,000</b> — extended by one week, ends <b>July 15, 2026</b></span>
+    <span class="eb-clock" id="ebClock">—d —h —m —s</span>
+    <span class="eb-note">price rises after · lock it in now</span>
+  </div>
+</div>
+
 <nav>
   <div class="wrap nav-inner">
     <a class="logo" href="#top">
@@ -193,12 +202,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="eyebrow">Two ways to enroll</div>
     <h2 class="serif" style="margin-bottom:8px">Pick your path in.</h2>
-    <p class="lead" style="margin-bottom:26px">The workshop on its own, or the workshop paired with the fully-recorded Claude Certified Architect track. Choose before you check out.</p>
-    <div class="ebird-banner">
-      <span>⏳ Early-bird <b>₹60,000</b> — <b>extended by one week</b>, ends <b>July 15, 2026</b></span>
-      <span class="eb-clock" id="ebClock">—d —h —m —s</span>
-      <span class="eb-note">the price rises after the early-bird deadline · lock it in now</span>
-    </div>
+    <p class="lead" style="margin-bottom:34px">The workshop on its own, or the workshop paired with the fully-recorded Claude Certified Architect track. Choose before you check out.</p>
     <div class="cases" style="grid-template-columns:1fr 1fr;gap:22px;margin-top:0">
       <div class="case" style="background:var(--paper);display:flex;flex-direction:column">
         <div class="tag">Option A · the workshop</div>
