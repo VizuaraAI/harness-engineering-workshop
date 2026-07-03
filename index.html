@@ -55,6 +55,10 @@ h1 .u{border-bottom:4px solid var(--accent)}
 .sub{font-size:15.5px;color:var(--muted);max-width:46ch;margin-bottom:34px}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .price-note{font-size:12px;color:var(--muted);margin-top:18px;letter-spacing:.05em}
+.ebird-banner{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;justify-content:center;text-align:center;
+  border:1.5px solid var(--accent);background:#f9f4ee;padding:14px 22px;margin:0 0 32px;font-size:13.5px}
+.ebird-banner .eb-clock{font-weight:600;color:var(--accent);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.ebird-banner .eb-note{color:var(--muted);font-size:12px;width:100%}
 
 /* terminal */
 .term{background:var(--term-bg);border:1px solid var(--line);box-shadow:0 1px 0 var(--line), 0 24px 60px -30px rgba(29,28,26,.35);font-size:13px}
@@ -189,14 +193,19 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="eyebrow">Two ways to enroll</div>
     <h2 class="serif" style="margin-bottom:8px">Pick your path in.</h2>
-    <p class="lead" style="margin-bottom:34px">The workshop on its own, or the workshop paired with the fully-recorded Claude Certified Architect track. Choose before you check out.</p>
+    <p class="lead" style="margin-bottom:26px">The workshop on its own, or the workshop paired with the fully-recorded Claude Certified Architect track. Choose before you check out.</p>
+    <div class="ebird-banner">
+      <span>⏳ Early-bird <b>₹60,000</b> — <b>extended by one week</b>, ends <b>July 15, 2026</b></span>
+      <span class="eb-clock" id="ebClock">—d —h —m —s</span>
+      <span class="eb-note">the price rises after the early-bird deadline · lock it in now</span>
+    </div>
     <div class="cases" style="grid-template-columns:1fr 1fr;gap:22px;margin-top:0">
       <div class="case" style="background:var(--paper);display:flex;flex-direction:column">
         <div class="tag">Option A · the workshop</div>
         <h3 style="margin-bottom:6px">Harness Engineering</h3>
         <p style="margin-bottom:14px">The full 5-day live cohort, Aug 3–7. Recordings, code checkpoints, and live review of your harness.</p>
         <p style="font-family:'Source Serif 4',serif;font-style:italic;font-size:30px;color:var(--ink);margin:auto 0 2px">₹60,000</p>
-        <p style="font-size:12px;margin-bottom:16px">early-bird launch price · expected to go up</p>
+        <p style="font-size:12px;margin-bottom:16px">early-bird price · ends July 15</p>
         <a class="btn solid" href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">Enroll — ₹60,000</a>
       </div>
       <div class="case" style="outline:2px solid var(--accent);outline-offset:-2px;background:#f9f4ee;display:flex;flex-direction:column">
@@ -381,7 +390,7 @@ footer a{color:var(--muted)}
     <h2 class="serif">The practical part.</h2>
     <div class="facts">
       <div class="fact"><div class="k">Dates</div><div class="v serif">Aug 3–7, 2026</div><div class="s">Monday to Friday, daily 7:00–9:00 AM IST on Zoom, with recordings</div></div>
-      <div class="fact"><div class="k">Price</div><div class="v serif">₹60,000</div><div class="s">early-bird launch pricing — expected to go up · includes recordings, code checkpoints for every module, and the cohort community</div></div>
+      <div class="fact"><div class="k">Price</div><div class="v serif">₹60,000</div><div class="s">early-bird price until July 15, 2026 (extended by a week) — rises after · includes recordings, code checkpoints for every module, and the cohort community</div></div>
       <div class="fact"><div class="k">Instructor</div><div class="v serif">Raj Dandekar</div><div class="s">PhD (MIT) · co-founder, Vizuara</div></div>
       <div class="fact"><div class="k">Prerequisites</div><div class="v serif">You code</div><div class="s">comfort with Python or TypeScript and basic LLM API calls — no agent experience needed</div></div>
       <div class="fact"><div class="k">Who it's for</div><div class="v serif">Builders</div><div class="s">engineers, tech leads, and founders who want to own the agent layer, not rent it</div></div>
@@ -394,14 +403,14 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="eyebrow">Pricing</div>
     <h2 class="serif">Two ways in.</h2>
-    <p class="lead">₹60,000 is the <b>early-bird launch price</b> — it is expected to go up as the cohort fills. And if you want the certification path too, the Claude Certified Architect track can be added at a bundle price.</p>
+    <p class="lead">₹60,000 is the <b>early-bird launch price</b> — it runs until <b>July 15, 2026</b> (extended by a week), then rises. And if you want the certification path too, the Claude Certified Architect track can be added at a bundle price.</p>
     <div class="cases" style="grid-template-columns:1fr 1fr">
       <div class="case">
         <div class="tag">The workshop</div>
         <h3>Harness Engineering</h3>
         <p style="margin-bottom:14px">The full 5-day live cohort (Aug 3–7), recordings, code checkpoints, and live review of your harness.</p>
         <p style="font-family:'Source Serif 4',serif;font-style:italic;font-size:30px;color:var(--ink);margin-bottom:4px">₹60,000</p>
-        <p style="font-size:12px;margin-bottom:18px">early-bird launch price — expected to go up</p>
+        <p style="font-size:12px;margin-bottom:18px">early-bird price — ends July 15, then rises</p>
         <a class="btn solid" href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">Enroll — ₹60,000</a>
       </div>
       <div class="case" style="outline:2px solid var(--accent);outline-offset:-2px;background:#f9f4ee">
@@ -449,7 +458,7 @@ footer a{color:var(--muted)}
       </details>
       <details>
         <summary>How does the early bird pricing work?</summary>
-        <div class="a">₹60,000 is the <b>early-bird launch price</b> for the first cohort of the world's first harness engineering workshop. The price is expected to go up as seats fill — enrolling early locks it in. The cohort starts Monday, August 3, 2026.</div>
+        <div class="a">₹60,000 is the <b>early-bird launch price</b> for the first cohort of the world's first harness engineering workshop. It has been <b>extended by one week and now ends July 15, 2026</b>; after that the price rises — enrolling early locks it in. The cohort itself runs August 3–7, 2026.</div>
       </details>
       <details>
         <summary>What is the Claude Certified Architect add-on?</summary>
@@ -467,7 +476,7 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <div class="eyebrow">August 3–7, 2026</div>
     <h2 class="serif">Stop renting the agent layer. Build your own.</h2>
-    <p class="lead">The world's first harness engineering workshop · by Vizuara · Aug 3–7 · 7:00–9:00 AM IST · early bird ₹60,000, going up</p>
+    <p class="lead">The world's first harness engineering workshop · by Vizuara · Aug 3–7 · 7:00–9:00 AM IST · early bird ₹60,000 until July 15</p>
     <a class="btn solid" href="https://vizuara.ai/courses/the-harness-engineering-workshop" target="_blank" rel="noopener">Enroll — early bird ₹60,000</a>
   </div>
 </section>
@@ -479,5 +488,23 @@ footer a{color:var(--muted)}
   </div>
 </footer>
 
+<script>
+(function(){
+  var end = new Date('2026-07-15T23:59:59+05:30').getTime();
+  var el = document.getElementById('ebClock');
+  if(!el) return;
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    var diff = end - Date.now();
+    if(diff <= 0){ el.textContent = 'early-bird closed'; return; }
+    var d = Math.floor(diff/86400000),
+        h = Math.floor(diff%86400000/3600000),
+        m = Math.floor(diff%3600000/60000),
+        s = Math.floor(diff%60000/1000);
+    el.textContent = d + 'd ' + pad(h) + 'h ' + pad(m) + 'm ' + pad(s) + 's';
+  }
+  tick(); setInterval(tick, 1000);
+})();
+</script>
 </body>
 </html>
